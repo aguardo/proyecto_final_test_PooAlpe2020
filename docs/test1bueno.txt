@@ -1,0 +1,270 @@
+1. ¿Cuál de los siguientes no es un tipo de servidor de correo electrónico? 
+a. SNMP. xxxxxxxx 
+b. SMTP
+c. POP3
+d. IMAP
+
+2. Al utilizar una cuenta de correo electrónico Web, todas estas afirmaciones son verdaderas A EXCEPCIÓN DE:
+a. Está permitido el acceso a una cuenta de correo electrónico Web desde cualquier computadora que se encuentre conectada a la Internet. 
+b. Se debe cambiar de cuenta de correo electrónico Web si se decide cambiar de ISP.  xxxxxxxx
+c. Se recibirán mensajes publicitarios y correspondencia no deseada. 
+d. La mayoría de las cuentas de correo electrónico Web son gratuitas.
+
+3. Al enviar adjuntos, es importante _____. 
+a. Incluir una nota que describe el archivo adjunto. 
+b. Asegurarse de que el nombre del archivo sea representativo del contenido del adjunto. 
+c. Conocer el programa que utiliza el destinatario. 
+d. Todos los anteriores xxxxxxxx
+
+4. El servidor de correo electrónico saliente es
+a. SNMP
+b. SMTP.  xxxxxxxx
+c. POP3
+d. IMAP
+
+Las siguientes preguntas hacen referencia a la imagen que podemos ver a continuación:
+
+
+5. El nombre de la zona 1
+a. Barra de titulo. xxxxxxxx
+b. Tareas pendientes
+c. Cinta de opciones
+d. Panel de carpetas
+
+6. El nombre de la zona 2
+a. Barra de titulo
+b. Alinear texto. 
+c. Insertar viñetas y números. 
+d. Tareas pendientes xxxxxxxx
+
+7. El nombre de la zona 3 
+a. Cinta xxxxx
+b. Panel de carpetas
+c. Tareas pendientes
+d. Barra de estado
+
+8. El nombre de la zona 4
+a. Cinta
+b. Panel de carpetas xxxxx
+c. Barra de navegación
+d. Mensajes
+
+9. El nombre de la zona 5
+a. Cinta
+b. Panel de carpetas  
+c. Barra de navegación xxxx
+d. Mensajes
+
+10. El nombre de la zona 6
+a. Cinta
+b. Panel de carpetas  
+c. Barra de navegación
+d. Mensajes xxxxx
+
+11. El nombre de la zona 7
+a. Panel de lectura xxxx
+b. Panel de carpetas  
+c. Barra de estado
+d. Mensajes  
+
+
+12. El nombre de la zona 8
+a. Panel de lectura  
+b. Panel de carpetas  
+c. Barra de estado xxxxxx
+d. Mensajes  
+
+13. Podemos crear varias cuentas de correo en el mismo Outlook 
+a. Si xxxx
+b. No
+c. Depende de la versión
+d. Depende del sistema operativo
+
+14. El dominio de primer nivel .com representa 
+a. Una asociación sin fines de lucro. 
+b. Una institución educativa de los EE.UU. 
+c. Una compañía o empresa. xxxxxxxx 
+d. Una dependencia gubernamental de los EE.UU.
+
+15. Podemos anexar mas de un archivo al mismo correo electronico
+a. Si
+b. No
+c. Depende del tipo de archivo
+d. Podemos anexar varios archivos pero hay que tener cuidado con el tamaño de estos xxxx
+
+16.  El nombre del siguiente comando
+
+a. Enviar  
+b. Recibir  
+c. Enviar y recibir XXXX
+d. Sincronizar
+
+17. Las siglas HTTP significan... 
+a. Hyperlink Text To Protocol.
+b. Hypertext Transfer Protocol. xxxxxxxx
+c. Hyper Transport The Protocol.
+d. Hyper Transport protocol
+
+18. Establecer como predeterminado una cuenta significa...
+a. Que la cuenta se establece antes de terminar la sesión.
+b. Aparecerá directamente sin necesidad de abrirla.
+c. Es la cuenta utilizada por defecto para los procesos de outlook.  xxxxxxxx
+d. Ninguna de las opciones anteriores. 
+
+19. ¿Cuál de los siguientes elementos no pertenecen a Outlook?
+a. Correo
+b. Tareas
+c. Procedimientos xxxx
+d. Eventos
+
+20. ¿Cuáles de las siguientes opciones describe mejor a los mensajes no solicitados (spam)?
+a. Una película protagonizada por Tom Hanks
+b. Una pared cortafuego que rechaza sitios Web con contenido pornográfico
+c. Un producto comprado en un sitio Web
+d. Correspondencia no solicitada (correo basura) xxxxxxxx
+
+Las siguientes preguntas hacen referencia a la figura 1. 
+
+Figura 1
+
+21. Si queremos enviar un correo electrónico ¿cual de los botones de la figura 1 utilizaremos?
+a. 1
+b. 2
+c. 3
+d. Ninguno es correcto xxxx
+
+22. Si queremos adjuntar un archivo ¿Qué botón utilizaremos?
+a. 3 xxxx
+b. 2
+c. 1
+d. Ninguno es correcto
+
+23. Si queremos enviar un mensaje como importante ¿Qué botón utilizaremos?
+a. 1
+b. 7 xxxx
+c. 6
+d. 5
+
+
+24. ¿Que botón utilizaremos para utilizar la libreta de direcciones?
+a. 1 xxxx
+b. 2
+c. 3
+d. 4
+
+25. El botón numero 2 ¿Cómo se denomina?
+a. Libreta de direcciones
+b. Comprobar nombres xxxx
+c. Adjuntar Archivo
+d. Adjuntar elemento
+
+26. El botón numero 3 ¿Cómo se denomina?
+a. Libreta de direcciones
+b. Comprobar nombres
+c. Adjuntar Archivo xxxx
+d. Adjuntar elemento
+
+27. El botón numero 4 ¿Cómo se denomina?
+a. Libreta de direcciones
+b. Comprobar nombres
+c. Adjuntar Archivo 
+d. Adjuntar elemento xxxx
+
+28. El botón numero 5 nos permita colocar
+a. Firma digital
+b. Firma xxxxxxx
+c. Encriptación
+d. Sello
+
+29. El botón número 6 se denomina
+a. Importancia alta
+b. Importancia baja
+c. Seguimiento xxx
+d. Ninguna es correcta
+
+30. El botón número 7 se denomina
+a. Importancia alta xxx
+b. Importancia baja
+c. Seguimiento 
+d. Ninguna es correcta
+
+
+31. El botón número 8 se denomina
+a. Importancia alta 
+b. Importancia baja xxx
+c. Seguimiento 
+d. Ninguna es correcta
+
+32. El grupo de opciones 9 se denomina
+a. Texto básico
+b. Portapapeles
+c. Incluir xxxx
+d. Etiquetas
+
+33. El grupo de opciones 10 se denomina
+a. Texto básico
+b. Portapapeles
+c. Incluir 
+d. Etiquetas xxxxx
+
+34. Un servidor DNS es
+a. Servidor de nombres de dominio xxxxx
+b. Sistema nombres de direcciones
+c. Direcciones normales de sistema
+d. Servidor de direcciones de nombres
+
+35. El calendario que elementos contiene:
+a. Citas
+b. Reuniones
+c. Eventos
+d. Todos los anteriores xxxx
+
+36. ¿Cuál de las siguientes no es un carpeta de correo predeterminada?
+a. Bandeja de entrada
+b. Bandeja de salida
+c. Elementos enviados
+d. Spam xxxx
+
+
+Los botones de la siguiente imagen se denominan
+
+37. El numero 1
+a. Correo xxxx
+b. Calendario
+c. Personas
+d. Tareas
+
+38. El numero 2
+a. Correo
+b. Calendario xxx
+c. Personas
+d. Tareas
+
+39. El numero 3
+a. Correo
+b. Calendario
+c. Personas xxxxx
+d. Tareas
+
+40. El numero 4
+a. Correo
+b. Calendario
+c. Personas
+d. Tareas xxxx
+
+
+
+
+SOLUCIONES1A21D2B22A3D23B4B24A5A25B6D26C7A27D8B28B9C29C10D30A11A31B12C32C13A33D14C34A15D35D16C36D17B37A18C38B19C39C20D40D
+
+
+
+
+
+
+ Test 1 . Alpe 
+
+		Microsoft Outlook | Página6
+
+
+
