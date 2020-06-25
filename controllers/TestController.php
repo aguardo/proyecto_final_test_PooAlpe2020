@@ -9,10 +9,10 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\UploadForm;
+use app\models\UploadTest;
 use yii\web\UploadedFile;
 
-class SiteController extends Controller
+class TestController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -128,7 +128,7 @@ class SiteController extends Controller
         return $this->render('about');
     }
     
-    public function actionUploadTest()
+    public function actionUpload()
     {
         $model = new UploadTest();
 

@@ -5,22 +5,21 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "respuestas".
+ * This is the model class for table "categoria".
  *
  * @property int $id
  * @property string|null $texto
- * @property int|null $pregunta_id
  *
- * @property Preguntas $pregunta
+ * @property PreguntaCategoria[] $preguntaCategorias
  */
-class Respuestas extends \yii\db\ActiveRecord
+class Categoria extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'respuestas';
+        return 'categoria';
     }
 
     /**
@@ -29,9 +28,7 @@ class Respuestas extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pregunta_id'], 'integer'],
             [['texto'], 'string', 'max' => 255],
-            [['pregunta_id'], 'exist', 'skipOnError' => true, 'targetClass' => Preguntas::className(), 'targetAttribute' => ['pregunta_id' => 'id']],
         ];
     }
 
@@ -43,17 +40,16 @@ class Respuestas extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'texto' => 'Texto',
-            'pregunta_id' => 'Pregunta ID',
         ];
     }
 
     /**
-     * Gets query for [[Pregunta]].
+     * Gets query for [[PreguntaCategorias]].
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getPregunta()
+    public function getPreguntaCategorias()
     {
-        return $this->hasOne(Preguntas::className(), ['id' => 'pregunta_id']);
+        return $this->hasMany(PreguntaCategoria::className(), ['categoria_id' => 'id']);
     }
 }

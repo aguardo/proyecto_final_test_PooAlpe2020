@@ -5,23 +5,23 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "preguntas".
+ * This is the model class for table "pregunta".
  *
  * @property int $id
  * @property string|null $texto
  * @property string|null $respuesta_correcta
  *
- * @property PreguntasCategorias[] $preguntasCategorias
- * @property Respuestas[] $respuestas
+ * @property PreguntaCategoria[] $preguntaCategorias
+ * @property Respuesta[] $respuestas
  */
-class Preguntas extends \yii\db\ActiveRecord
+class Pregunta extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'preguntas';
+        return 'pregunta';
     }
 
     /**
@@ -48,13 +48,13 @@ class Preguntas extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PreguntasCategorias]].
+     * Gets query for [[PreguntaCategorias]].
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getPreguntasCategorias()
+    public function getPreguntaCategorias()
     {
-        return $this->hasMany(PreguntasCategorias::className(), ['pregunta_id' => 'id']);
+        return $this->hasMany(PreguntaCategoria::className(), ['pregunta_id' => 'id']);
     }
 
     /**
@@ -64,6 +64,11 @@ class Preguntas extends \yii\db\ActiveRecord
      */
     public function getRespuestas()
     {
-        return $this->hasMany(Respuestas::className(), ['pregunta_id' => 'id']);
+        return $this->hasMany(Respuesta::className(), ['pregunta_id' => 'id']);
+    }
+    
+    public function getCategorias(){
+        return $this->hasMany(Categoria::className(), ['id' => 'categoria_id'])->via('preguntaCategorias');
+       
     }
 }
