@@ -4,3 +4,15 @@ b. SMTP
 c. POP3
 d. IMAP
 
+2. Al utilizar una cuenta de correo electrónico Web, todas estas afirmaciones son verdaderas A EXCEPCIÓN DE:
+a. Está permitido el acceso a una cuenta de correo electrónico Web desde cualquier computadora que se encuentre conectada a la Internet. 
+b. Se debe cambiar de cuenta de correo electrónico Web si se decide cambiar de ISP.  xxxxxxxx
+c. Se recibirán mensajes publicitarios y correspondencia no deseada. 
+d. La mayoría de las cuentas de correo electrónico Web son gratuitas.
+
+3. Al enviar adjuntos, es importante _____. 
+a. Incluir una nota que describe el archivo adjunto. 
+b. Asegurarse de que el nombre del archivo sea representativo del contenido del adjunto. 
+c. Conocer el programa que utiliza el destinatario. 
+d. Todos los anteriores xxxxxxxx
+

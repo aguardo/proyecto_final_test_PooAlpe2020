@@ -5,22 +5,23 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "respuesta".
+ * This is the model class for table "pregunta_test".
  *
  * @property int $id
- * @property string $texto
  * @property int|null $pregunta_id
+ * @property int|null $test_id
  *
  * @property Pregunta $pregunta
+ * @property Test $test
  */
-class Respuesta extends \yii\db\ActiveRecord
+class PreguntaTest extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'respuesta';
+        return 'pregunta_test';
     }
 
     /**
@@ -29,10 +30,9 @@ class Respuesta extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['texto'], 'required'],
-            [['pregunta_id'], 'integer'],
-            [['texto'], 'string', 'max' => 255],
+            [['pregunta_id', 'test_id'], 'integer'],
             [['pregunta_id'], 'exist', 'skipOnError' => true, 'targetClass' => Pregunta::className(), 'targetAttribute' => ['pregunta_id' => 'id']],
+            [['test_id'], 'exist', 'skipOnError' => true, 'targetClass' => Test::className(), 'targetAttribute' => ['test_id' => 'id']],
         ];
     }
 
@@ -43,8 +43,8 @@ class Respuesta extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'texto' => 'Texto',
             'pregunta_id' => 'Pregunta ID',
+            'test_id' => 'Test ID',
         ];
     }
 
@@ -56,5 +56,15 @@ class Respuesta extends \yii\db\ActiveRecord
     public function getPregunta()
     {
         return $this->hasOne(Pregunta::className(), ['id' => 'pregunta_id']);
+    }
+
+    /**
+     * Gets query for [[Test]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTest()
+    {
+        return $this->hasOne(Test::className(), ['id' => 'test_id']);
     }
 }

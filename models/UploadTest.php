@@ -10,19 +10,33 @@ class UploadTest extends Model
     /**
      * @var UploadedFile
      */
-    public $imageFile;
+    public $testFile;
+    public $description;
 
     public function rules()
     {
         return [
-            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'txt'],
+            [['description'], 'required'],
+            [['testFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'txt'],
+            [['description'], 'string'],
+            [['description'],'safe'],
+           
+        ];
+    }
+    
+    public function attributeLabels()
+    {
+        return [
+            'description' => 'Descripción',
+            'testFile' => 'Archivo de Texto',
         ];
     }
     
     public function upload()
     {
+    
         if ($this->validate()) {
-            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+            $this->testFile->saveAs('uploads/' . $this->testFile->baseName . '.' . $this->testFile->extension);
             $this->process_file();
             return true;
         } else {
@@ -32,7 +46,11 @@ class UploadTest extends Model
     
     private function process_file(){
         
-        $file = file_get_contents('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+        $file = file_get_contents('uploads/' . $this->testFile->baseName . '.' . $this->testFile->extension);
+        
+        $test = new Test();
+                $test->description = $this->description;
+                $test->save();
         
         //Obtengo bloques pregunta-respuestas
         
@@ -158,16 +176,12 @@ class UploadTest extends Model
                 var_dump("Respuestas");
                 var_dump($respuestas);
                 var_dump($respuesta_correcta);
-               
-                
-                $test = new Test();
-                $test->description = "Prueba";
-                $test->save();
                   
                 $pregunta = new Pregunta();
                 $pregunta->texto = $texto_pregunta;
                 $pregunta->respuesta_correcta = $respuesta_correcta;
-                $pregunta->link('test',$test);                
+                $pregunta->save();
+                $pregunta->link('tests',$test);                
                
                 
                 foreach($respuestas as $texto_respuesta){

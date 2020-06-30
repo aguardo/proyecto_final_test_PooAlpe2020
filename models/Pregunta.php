@@ -8,14 +8,13 @@ use Yii;
  * This is the model class for table "pregunta".
  *
  * @property int $id
- * @property string|null $texto
- * @property string|null $respuesta_correcta
+ * @property string $texto
+ * @property string $respuesta_correcta
  * @property int|null $image_id
- * @property int|null $test_id
  *
  * @property Imagen $image
- * @property Test $test
  * @property PreguntaCategoria[] $preguntaCategorias
+ * @property PreguntaTest[] $preguntaTests
  * @property Respuesta[] $respuestas
  */
 class Pregunta extends \yii\db\ActiveRecord
@@ -34,11 +33,11 @@ class Pregunta extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['image_id', 'test_id'], 'integer'],
+            [['texto', 'respuesta_correcta'], 'required'],
+            [['image_id'], 'integer'],
             [['texto'], 'string', 'max' => 255],
             [['respuesta_correcta'], 'string', 'max' => 1],
             [['image_id'], 'exist', 'skipOnError' => true, 'targetClass' => Imagen::className(), 'targetAttribute' => ['image_id' => 'id']],
-            [['test_id'], 'exist', 'skipOnError' => true, 'targetClass' => Test::className(), 'targetAttribute' => ['test_id' => 'id']],
         ];
     }
 
@@ -52,7 +51,6 @@ class Pregunta extends \yii\db\ActiveRecord
             'texto' => 'Texto',
             'respuesta_correcta' => 'Respuesta Correcta',
             'image_id' => 'Image ID',
-            'test_id' => 'Test ID',
         ];
     }
 
@@ -67,16 +65,6 @@ class Pregunta extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Test]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTest()
-    {
-        return $this->hasOne(Test::className(), ['id' => 'test_id']);
-    }
-
-    /**
      * Gets query for [[PreguntaCategorias]].
      *
      * @return \yii\db\ActiveQuery
@@ -84,6 +72,16 @@ class Pregunta extends \yii\db\ActiveRecord
     public function getPreguntaCategorias()
     {
         return $this->hasMany(PreguntaCategoria::className(), ['pregunta_id' => 'id']);
+    }
+
+    /**
+     * Gets query for [[PreguntaTests]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPreguntaTests()
+    {
+        return $this->hasMany(PreguntaTest::className(), ['pregunta_id' => 'id']);
     }
 
     /**
@@ -98,6 +96,11 @@ class Pregunta extends \yii\db\ActiveRecord
     
     public function getCategorias(){
         return $this->hasMany(Categoria::className(), ['id' => 'categoria_id'])->via('preguntaCategorias');
+       
+    }
+    
+    public function getTests(){
+        return $this->hasMany(Test::className(), ['id' => 'test_id'])->via('preguntaTests');
        
     }
 }

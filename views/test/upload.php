@@ -15,8 +15,10 @@ use yii\widgets\ActiveForm;
  <?php else: ?>  
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
+        
+        <?= $form->field($model, 'description')->textInput() ?>
 
-        <?= $form->field($model, 'imageFile')->fileInput() ?>
+        <?= $form->field($model, 'testFile')->fileInput() ?>
 
         <button>Submit</button>
 

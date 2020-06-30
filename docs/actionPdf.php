@@ -64,3 +64,8 @@
 
             ]
         ]);
+
+        
+        return $pdf->render();
+        
+ }       
