@@ -91,7 +91,7 @@ class Pregunta extends \yii\db\ActiveRecord
      */
     public function getRespuestas()
     {
-        return $this->hasMany(Respuesta::className(), ['pregunta_id' => 'id']);
+        return $this->hasMany(Respuesta::className(), ['pregunta_id' => 'id'])->orderBy('id');
     }
     
     public function getCategorias(){

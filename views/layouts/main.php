@@ -39,7 +39,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Categorias', 'url' => ['/categoria/index']],
-            ['label' => 'Upload', 'url' => ['/test/upload']],
+            ['label' => 'Tests', 'url' => ['/test/index']],
             
         ],
     ]);
